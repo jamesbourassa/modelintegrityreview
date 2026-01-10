@@ -9,11 +9,14 @@
     body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;max-width:900px;margin:56px auto;padding:0 20px;line-height:1.6;color:#0f172a}
     header{margin-bottom:26px}
     h1{font-size:2rem;margin-bottom:6px}
+    h2{font-size:1.35rem;margin-bottom:10px}
+    h3{font-size:1.05rem;margin:14px 0 6px}
     nav a{margin-right:18px;color:#2563eb;text-decoration:none;font-size:.95rem}
     nav a:hover{text-decoration:underline}
     .box{border:1px solid #e5e7eb;border-radius:14px;padding:20px;margin:18px 0;background:#fff}
     .q{font-weight:600;margin-bottom:8px}
     .a{color:#334155}
+    .small{font-size:.95rem}
     footer{margin-top:34px;color:#64748b;font-size:.95rem}
   </style>
 </head>
@@ -25,6 +28,42 @@
       <a href="process.html">Process</a>
     </nav>
   </header>
+
+  <!-- New: definitional section with anchor -->
+  <div class="box" id="definition">
+    <h2>What We Mean by <em>Model Integrity Review</em></h2>
+
+    <h3>Model</h3>
+    <div class="a small">
+      A <em>model</em> is any structured representation used to support understanding or decisions — including
+      spreadsheets, forecasts, policy models, simulations, or analytical frameworks.
+      If it influences decisions, explanations, or accountability, it is a model.
+    </div>
+
+    <h3>Integrity</h3>
+    <div class="a small">
+      <em>Integrity</em> refers to how well a model holds together <strong>as documented</strong>.
+      It means assumptions are visible, inputs and outputs are internally consistent, terminology is clear,
+      and the model can be explained without relying on undocumented knowledge.
+      Integrity is not about whether a model is “right” — it is about whether it is
+      <strong>coherent, traceable, and explainable</strong>.
+    </div>
+
+    <h3>Review</h3>
+    <div class="a small">
+      A <em>review</em> is an independent, document-based examination of existing materials.
+      We do not build, modify, run, or validate models.
+      Instead, we assess documentation clarity, internal consistency, and explainability,
+      and provide an advisory memorandum describing observations and risks.
+    </div>
+
+    <h3>In Plain Terms</h3>
+    <div class="a small">
+      Model Integrity Review helps organizations ensure the models they rely on are
+      <strong>clear, consistent, and defensible</strong> — without validating or redesigning
+      the models themselves.
+    </div>
+  </div>
 
   <div class="box">
     <div class="q">What problem is Model Integrity Review designed to address?</div>
@@ -65,8 +104,8 @@
     <div class="q">What kinds of issues typically emerge in a review?</div>
     <div class="a">
       Common observations include undocumented assumptions, unclear input–output traceability, inconsistent terminology,
-      ambiguous normalization or scaling choices, and gaps between narrative descriptions and actual structure. These are
-      framed as documentation or governance risks, not technical errors.
+      ambiguous normalization or scaling choices, and gaps between narrative descriptions and actual structure.
+      These are framed as documentation or governance risks, not technical errors.
     </div>
   </div>
 
