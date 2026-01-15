@@ -8,8 +8,8 @@
   <style>
     body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;max-width:900px;margin:56px auto;padding:0 20px;line-height:1.6;color:#0f172a}
     header{margin-bottom:26px}
-    h1{font-size:2rem;margin-bottom:6px}
-    h2{font-size:1.35rem;margin-bottom:10px}
+    h1{font-size:2.1rem;margin-bottom:4px}
+    h2{font-size:1.4rem;margin:0 0 12px}
     h3{font-size:1.05rem;margin:14px 0 6px}
     nav a{margin-right:18px;color:#2563eb;text-decoration:none;font-size:.95rem}
     nav a:hover{text-decoration:underline}
@@ -19,12 +19,13 @@
     footer{margin-top:34px;color:#64748b;font-size:.95rem}
     ul{margin:10px 0 0 18px}
     li{margin:6px 0}
-    .step{font-weight:600;margin-bottom:8px}
+    .step{font-weight:600;margin-bottom:6px}
   </style>
 </head>
 <body>
   <header>
-    <h1>Process</h1>
+    <h1>Model Integrity Review</h1>
+    <h2>Process</h2>
     <nav>
       <a href="index.html">Home</a>
       <a href="process.html">Process</a>
@@ -33,20 +34,21 @@
   </header>
 
   <div class="box">
-    <h2>What to expect</h2>
     <div class="muted">
       Model Integrity Review (MIR) is a <strong>fixed-scope, management-led, document-based review</strong> of an analytical model and its
-      supporting documentation. MIR focuses on <strong>structural clarity</strong>, <strong>internal consistency</strong>, <strong>assumption traceability</strong>, and
-      documentation sufficiency for <strong>management oversight</strong>, audit, or decision use.
+      supporting documentation. MIR focuses on <strong>structural clarity</strong>, <strong>internal consistency</strong>,
+      <strong>assumption traceability</strong>, and documentation sufficiency for
+      <strong>management oversight</strong>, audit, or decision use.
     </div>
     <div class="muted small" style="margin-top:10px">
-      MIR complements existing validation or governance programs by focusing on <strong>clarity and defensibility of the model as documented</strong>,
+      MIR complements existing validation or governance programs by focusing on
+      <strong>clarity and defensibility of the model as documented</strong>,
       not statistical testing or regulatory compliance.
     </div>
   </div>
 
   <div class="box" id="scope">
-    <h2>Scope boundaries (read first)</h2>
+    <h3>Scope boundaries (read first)</h3>
     <ul class="small">
       <li>MIR does <strong>not</strong> build, modify, execute, or optimize models.</li>
       <li>MIR does <strong>not</strong> validate model correctness or performance.</li>
@@ -60,50 +62,36 @@
   </div>
 
   <div class="box">
-    <h2>Engagement steps</h2>
+    <h3>Engagement steps</h3>
 
     <div class="step">1) Fit and materials check</div>
     <div class="muted small">
-      You send a short note describing the model’s decision context, who needs to stand behind it, and what documentation exists today.
-      MIR confirms whether a document-based review is a good fit and identifies the materials needed.
+      You send a short note describing the model’s decision context, who needs to stand behind it,
+      and what documentation exists today.
     </div>
 
-    <div class="step" style="margin-top:14px">2) Scope framing and fixed fee</div>
+    <div class="step">2) Scope framing and fixed fee</div>
     <div class="muted small">
-      MIR proposes a fixed scope (what materials will be reviewed, what will not be reviewed, and what questions the memorandum will address)
-      and confirms a fixed fee before work begins. Engagements are designed to be contained decision-support controls.
+      MIR confirms review boundaries and a fixed fee before work begins.
     </div>
 
-    <div class="step" style="margin-top:14px">3) Review (document-first)</div>
-    <div class="muted small">
-      MIR examines whether the model is coherent and defensible as documented:
-    </div>
+    <div class="step">3) Review (document-first)</div>
     <ul class="small">
-      <li><strong>Structural clarity:</strong> whether the structure can be understood from the materials without undocumented “tribal knowledge.”</li>
-      <li><strong>Internal consistency:</strong> whether definitions, logic, and dependencies hold together across sections and artifacts.</li>
-      <li><strong>Assumption traceability:</strong> whether key assumptions are visible and traceable to outputs and decisions.</li>
-      <li><strong>Documentation sufficiency:</strong> whether an oversight reader could follow the reasoning and limitations.</li>
+      <li><strong>Structural clarity</strong></li>
+      <li><strong>Internal consistency</strong></li>
+      <li><strong>Assumption traceability</strong></li>
+      <li><strong>Documentation sufficiency</strong></li>
     </ul>
 
-    <div class="step" style="margin-top:14px">4) Deliverable: short advisory memorandum</div>
+    <div class="step">4) Deliverable</div>
     <div class="muted small">
-      MIR delivers a <strong>short written review memorandum</strong> describing review scope, observed strengths, and documentation or structural risks.
-      The memorandum is <strong>advisory</strong> and is <strong>not</strong> an endorsement, certification, or validation.
-      Depth is driven by model complexity and documentation quality—not a fixed reporting template.
+      A <strong>short written review memorandum</strong>, advisory only — not an endorsement,
+      certification, or validation.
     </div>
 
-    <div class="step" style="margin-top:14px">5) Optional clarification (limited)</div>
+    <div class="step">5) Optional clarification</div>
     <div class="muted small">
-      If helpful, MIR can answer a small number of clarification questions about the memorandum’s statements.
-      MIR does not iterate into redesign, optimization, or validation work.
-    </div>
-  </div>
-
-  <div class="box">
-    <h2>Confidentiality</h2>
-    <div class="muted small">
-      Client materials are treated as confidential. MIR does not disclose client identities or reuse client materials across engagements.
-      Any internal drafting or analytical tools are used only as aids; all judgment, interpretation, and conclusions are made by the reviewer.
+      Limited clarification questions only; no redesign or validation follow-on.
     </div>
   </div>
 
