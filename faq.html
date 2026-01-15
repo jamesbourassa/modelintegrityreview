@@ -4,28 +4,25 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>FAQ — Model Integrity Review</title>
-  <meta name="description" content="Frequently asked questions and scope boundaries for Model Integrity Review (MIR): independent, management-led, document-based review of analytical models." />
+  <meta name="description" content="Frequently asked questions and scope boundaries for Model Integrity Review (MIR)." />
   <style>
     body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;max-width:900px;margin:56px auto;padding:0 20px;line-height:1.6;color:#0f172a}
     header{margin-bottom:26px}
-    h1{font-size:2rem;margin-bottom:6px}
-    h2{font-size:1.35rem;margin:0 0 10px}
+    h1{font-size:2.1rem;margin-bottom:4px}
+    h2{font-size:1.4rem;margin:0 0 12px}
     nav a{margin-right:18px;color:#2563eb;text-decoration:none;font-size:.95rem}
     nav a:hover{text-decoration:underline}
     .box{border:1px solid #e5e7eb;border-radius:14px;padding:20px;margin:18px 0;background:#fff}
-    .q{font-weight:700;margin:0 0 8px}
+    .q{font-weight:700;margin-bottom:6px}
     .a{color:#334155}
     .small{font-size:.95rem}
-    .muted{color:#64748b}
-    ul{margin:10px 0 0 18px}
-    li{margin:6px 0}
     footer{margin-top:34px;color:#64748b;font-size:.95rem}
-    .hr{height:1px;background:#e5e7eb;margin:14px 0}
   </style>
 </head>
 <body>
   <header>
-    <h1>Frequently Asked Questions</h1>
+    <h1>Model Integrity Review</h1>
+    <h2>Frequently Asked Questions</h2>
     <nav>
       <a href="index.html">Home</a>
       <a href="process.html">Process</a>
@@ -33,107 +30,53 @@
     </nav>
   </header>
 
-  <div class="box" id="definition">
-    <h2>What MIR is (in one paragraph)</h2>
+  <div class="box">
+    <div class="q">What is Model Integrity Review?</div>
     <div class="a">
-      Model Integrity Review (MIR) provides <strong>independent, management-led, document-based review</strong> of analytical models and
-      their supporting documentation, focused on structural clarity, internal consistency, assumption traceability, and documentation
-      sufficiency for <strong>management oversight</strong>, audit, or decision use.
-      MIR complements existing validation or governance programs by focusing on <strong>clarity and defensibility of the model as documented</strong>,
-      not statistical testing or regulatory compliance.
+      MIR provides independent, management-led, document-based review of analytical models,
+      focused on structural clarity, internal consistency, assumption traceability,
+      and documentation sufficiency for management oversight.
     </div>
   </div>
 
-  <div class="box" id="deliverable">
+  <div class="box">
     <div class="q">What do we get at the end?</div>
     <div class="a">
-      A <strong>short written review memorandum</strong> describing review scope, observed strengths, and documentation or structural risks.
-      The memorandum is <strong>advisory</strong> and is <strong>not</strong> an endorsement, certification, or validation.
-      Depth is driven by model complexity and documentation quality—not a fixed reporting template.
+      A <strong>short written review memorandum</strong> describing scope, observed strengths,
+      and documentation or structural risks. Advisory only — not an endorsement,
+      certification, or validation.
     </div>
   </div>
 
-  <div class="box" id="validation">
-    <div class="q">Is this validation, audit, certification, or approval?</div>
+  <div class="box">
+    <div class="q">Is this validation or audit?</div>
     <div class="a">
-      No. MIR does not validate correctness or performance, certify compliance, or approve models or outcomes.
-      MIR focuses on whether the model is <strong>coherent and defensible as documented</strong>—so leadership can understand what they are relying on.
+      No. MIR does not validate correctness, certify compliance, or approve models.
+      It assesses whether a model is coherent and defensible as documented.
     </div>
   </div>
 
-  <div class="box" id="materials">
+  <div class="box">
     <div class="q">Do you need our code or data?</div>
     <div class="a">
-      Usually no. MIR is document-based and relies on materials you already have (reports, technical notes, appendices, spreadsheets, or excerpts).
-      MIR does not run models, collect new data, or infer behavior beyond what is documented.
+      Usually no. Reviews rely on existing documentation and materials.
+      MIR does not run models or generate new data.
     </div>
   </div>
 
-  <div class="box" id="assumptions">
-    <div class="q">Do you judge whether our assumptions are “right”?</div>
-    <div class="a">
-      MIR does not assess domain correctness. We assess whether assumptions are <strong>clearly stated</strong>, <strong>internally consistent</strong>,
-      and <strong>traceable</strong> to outputs and decisions, and whether limitations are documented in a way management can understand.
-    </div>
-  </div>
-
-  <div class="box" id="issues">
-    <div class="q">What kinds of issues typically emerge?</div>
-    <div class="a">
-      Common observations include undocumented assumptions, unclear input–output traceability, inconsistent definitions across artifacts,
-      hidden dependencies, ambiguous normalization or scaling, and gaps between narrative descriptions and the model’s actual structure.
-      These are framed as <strong>documentation or governance risks</strong>, not technical errors.
-    </div>
-  </div>
-
-  <div class="box" id="who">
-    <div class="q">Who typically requests a Model Integrity Review?</div>
-    <div class="a">
-      Requests most often come from senior managers, consultants, research leads, or governance functions responsible for explaining or standing behind
-      a model they did not personally author.
-    </div>
-  </div>
-
-  <div class="box" id="confidentiality">
-    <div class="q">Are engagements confidential?</div>
-    <div class="a">
-      Yes. Client materials are treated as confidential. MIR does not disclose client identities or reuse client materials across engagements.
-    </div>
-  </div>
-
-  <div class="box" id="ai">
-    <div class="q">Is this AI? Do you use AI tools?</div>
-    <div class="a">
-      MIR is a <strong>human-led review</strong>. Any internal drafting or analytical tools may be used only as aids.
-      All judgment, interpretation, and conclusions are made by the reviewer. There is no automated assessment or AI decision-making.
-    </div>
-  </div>
-
-  <div class="box" id="team">
+  <div class="box">
     <div class="q">Who performs the review?</div>
     <div class="a">
-      Model Integrity Review is deliberately led and delivered by a single Lead Reviewer.
-      All reviews are conducted, written, and finalized by the same reviewer to preserve consistency, accountability, and independence.
+      All reviews are led, written, and finalized by a single Lead Reviewer
+      to preserve independence and accountability.
     </div>
   </div>
 
-  <div class="box" id="pricing">
-    <div class="q">How is pricing structured?</div>
-    <div class="a">
-      Reviews are scoped upfront and priced as a fixed fee. The fee is confirmed before work begins.
-      MIR is designed to be a contained decision-support control, not an ongoing engagement.
-    </div>
-  </div>
-
-  <div class="box" id="not-fit">
+  <div class="box">
     <div class="q">When is MIR not appropriate?</div>
     <div class="a">
-      MIR is not appropriate when validation, regulatory sign-off, litigation support, testimony preparation, media strategy,
-      or technical redesign is required. In those cases, specialized domain or legal services are more appropriate.
-    </div>
-    <div class="hr"></div>
-    <div class="small muted">
-      If you are seeking approval, certification, or technical optimization, MIR is unlikely to be the right fit.
+      When validation, regulatory sign-off, litigation support,
+      or technical redesign is required.
     </div>
   </div>
 
