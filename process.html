@@ -4,89 +4,111 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Process — Model Integrity Review</title>
-  <meta name="description" content="The Model Integrity Review process, from initial inquiry through delivery of the review memorandum." />
+  <meta name="description" content="How Model Integrity Review engagements work: a fixed-scope, management-led, document-based review culminating in a short advisory memorandum." />
   <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;max-width:900px;margin:56px auto;padding:0 20px;line-height:1.55;color:#0f172a}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;max-width:900px;margin:56px auto;padding:0 20px;line-height:1.6;color:#0f172a}
     header{margin-bottom:26px}
     h1{font-size:2rem;margin-bottom:6px}
+    h2{font-size:1.35rem;margin-bottom:10px}
+    h3{font-size:1.05rem;margin:14px 0 6px}
     nav a{margin-right:18px;color:#2563eb;text-decoration:none;font-size:.95rem}
     nav a:hover{text-decoration:underline}
     .box{border:1px solid #e5e7eb;border-radius:14px;padding:20px;margin:18px 0;background:#fff}
-    ol{margin:10px 0 0 18px}
-    li{margin:12px 0}
-    .muted{color:#64748b}
     .small{font-size:.95rem}
+    .muted{color:#334155}
     footer{margin-top:34px;color:#64748b;font-size:.95rem}
+    ul{margin:10px 0 0 18px}
+    li{margin:6px 0}
+    .step{font-weight:600;margin-bottom:8px}
   </style>
 </head>
 <body>
   <header>
-    <h1>Our Process</h1>
+    <h1>Process</h1>
     <nav>
       <a href="index.html">Home</a>
+      <a href="process.html">Process</a>
       <a href="faq.html">FAQ</a>
     </nav>
   </header>
 
   <div class="box">
-    <p class="small muted">
-      Model Integrity Review engagements are independent, document-based, and advisory.
-      They do not involve model execution, validation, certification, or redesign.
-    </p>
+    <h2>What to expect</h2>
+    <div class="muted">
+      Model Integrity Review (MIR) is a <strong>fixed-scope, management-led, document-based review</strong> of an analytical model and its
+      supporting documentation. MIR focuses on <strong>structural clarity</strong>, <strong>internal consistency</strong>, <strong>assumption traceability</strong>, and
+      documentation sufficiency for <strong>management oversight</strong>, audit, or decision use.
+    </div>
+    <div class="muted small" style="margin-top:10px">
+      MIR complements existing validation or governance programs by focusing on <strong>clarity and defensibility of the model as documented</strong>,
+      not statistical testing or regulatory compliance.
+    </div>
+  </div>
 
-    <ol>
-      <li>
-        <strong>Initial Inquiry & Scope Screening</strong><br/>
-        A brief exchange confirms the nature of the model, the intended use of the review,
-        and whether the engagement fits MIR’s scope and boundaries.
-      </li>
+  <div class="box" id="scope">
+    <h2>Scope boundaries (read first)</h2>
+    <ul class="small">
+      <li>MIR does <strong>not</strong> build, modify, execute, or optimize models.</li>
+      <li>MIR does <strong>not</strong> validate model correctness or performance.</li>
+      <li>MIR does <strong>not</strong> certify, approve, or endorse models or outcomes.</li>
+      <li>MIR does <strong>not</strong> provide regulatory sign-off or legal opinions.</li>
+      <li>MIR does <strong>not</strong> support litigation, testimony, or media strategy.</li>
+    </ul>
+    <div class="small muted" style="margin-top:10px">
+      If validation, certification, or redesign is required, MIR will say so directly.
+    </div>
+  </div>
 
-      <li>
-        <strong>Engagement Confirmation</strong><br/>
-        Scope, timeline, deliverables, and fee are confirmed in writing before work begins.
-        Reviews proceed only after mutual agreement on boundaries and expectations.
-      </li>
+  <div class="box">
+    <h2>Engagement steps</h2>
 
-      <li>
-        <strong>Materials Intake</strong><br/>
-        Client-provided documents are received and logged.
-        These materials form the sole basis of the review; no external inference or model execution is performed.
-      </li>
+    <div class="step">1) Fit and materials check</div>
+    <div class="muted small">
+      You send a short note describing the model’s decision context, who needs to stand behind it, and what documentation exists today.
+      MIR confirms whether a document-based review is a good fit and identifies the materials needed.
+    </div>
 
-      <li>
-        <strong>Structural Model Mapping</strong><br/>
-        The documented structure of the model is mapped at a conceptual level,
-        including inputs, assumptions, transformations, and outputs as described in the materials.
-      </li>
+    <div class="step" style="margin-top:14px">2) Scope framing and fixed fee</div>
+    <div class="muted small">
+      MIR proposes a fixed scope (what materials will be reviewed, what will not be reviewed, and what questions the memorandum will address)
+      and confirms a fixed fee before work begins. Engagements are designed to be contained decision-support controls.
+    </div>
 
-      <li>
-        <strong>Consistency, Traceability & Clarity Review</strong><br/>
-        Documentation is examined for internal consistency, assumption visibility,
-        terminology alignment, and traceability between narrative descriptions and structure.
-      </li>
+    <div class="step" style="margin-top:14px">3) Review (document-first)</div>
+    <div class="muted small">
+      MIR examines whether the model is coherent and defensible as documented:
+    </div>
+    <ul class="small">
+      <li><strong>Structural clarity:</strong> whether the structure can be understood from the materials without undocumented “tribal knowledge.”</li>
+      <li><strong>Internal consistency:</strong> whether definitions, logic, and dependencies hold together across sections and artifacts.</li>
+      <li><strong>Assumption traceability:</strong> whether key assumptions are visible and traceable to outputs and decisions.</li>
+      <li><strong>Documentation sufficiency:</strong> whether an oversight reader could follow the reasoning and limitations.</li>
+    </ul>
 
-      <li>
-        <strong>Review Memorandum Preparation</strong><br/>
-        A concise written memorandum (typically 2–4 pages) summarizes observations,
-        highlights documentation or governance risks, and notes areas where clarity may be improved.
-        Findings are descriptive and non-prescriptive.
-      </li>
+    <div class="step" style="margin-top:14px">4) Deliverable: short advisory memorandum</div>
+    <div class="muted small">
+      MIR delivers a <strong>short written review memorandum</strong> describing review scope, observed strengths, and documentation or structural risks.
+      The memorandum is <strong>advisory</strong> and is <strong>not</strong> an endorsement, certification, or validation.
+      Depth is driven by model complexity and documentation quality—not a fixed reporting template.
+    </div>
 
-      <li>
-        <strong>Delivery</strong><br/>
-        The memorandum is delivered electronically to the client.
-        Use and distribution are at the client’s discretion, subject to engagement terms.
-      </li>
-    </ol>
+    <div class="step" style="margin-top:14px">5) Optional clarification (limited)</div>
+    <div class="muted small">
+      If helpful, MIR can answer a small number of clarification questions about the memorandum’s statements.
+      MIR does not iterate into redesign, optimization, or validation work.
+    </div>
+  </div>
 
-    <p class="muted small" style="margin-top:16px">
-      Model Integrity Review is designed to support understanding, explanation, and defensibility of models
-      as documented — not to determine correctness or approve decisions.
-    </p>
+  <div class="box">
+    <h2>Confidentiality</h2>
+    <div class="muted small">
+      Client materials are treated as confidential. MIR does not disclose client identities or reuse client materials across engagements.
+      Any internal drafting or analytical tools are used only as aids; all judgment, interpretation, and conclusions are made by the reviewer.
+    </div>
   </div>
 
   <footer>
-    © 2025 Model Integrity Review. All rights reserved.
+    © 2026 Model Integrity Review. All rights reserved.
   </footer>
 </body>
 </html>
